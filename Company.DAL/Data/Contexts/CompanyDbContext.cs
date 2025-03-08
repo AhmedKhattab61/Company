@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Company.DAL.Data.Contexts
 {
-    internal class CompanyDbContext : DbContext 
+    public class CompanyDbContext : DbContext 
     {
         public CompanyDbContext() : base()
         { 
