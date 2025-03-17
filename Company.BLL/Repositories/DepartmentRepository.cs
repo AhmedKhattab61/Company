@@ -9,14 +9,15 @@ using Company.DAL.Models;
 
 namespace Company.BLL.Repositories
 {
-    public class DepartmentRepositories : IDepartmentRepository
+    public class DepartmentRepository : IDepartmentRepository
     {
 
-        private readonly CompanyDbContext _context;
+        private readonly CompanyDbContext _context;  //NULL
 
-        public DepartmentRepositories()
+        // ASK CLR Create Object From CompanyDbContext
+        public DepartmentRepository(CompanyDbContext context)
         {
-            _context = new CompanyDbContext();
+            _context = context;
         }
 
         public IEnumerable<Department> GetAll()
