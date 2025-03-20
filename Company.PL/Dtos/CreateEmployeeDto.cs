@@ -6,7 +6,7 @@ namespace Company.PL.Dtos
     public class CreateEmployeeDto
     {
         [Required(ErrorMessage = "Name is Required!")]
-        public string Name { get; set; }
+        public string EmpName { get; set; }
 
         [Range(22, 60, ErrorMessage = "Age must be between 22 and 60")]
         public int? Age { get; set; }
@@ -30,5 +30,8 @@ namespace Company.PL.Dtos
 
         [DisplayName("Date Of Creation")]
         public DateTime CreateAt { get; set; }
+
+        public int? DepartmentId { get; set; }
+
     }
 }
