@@ -27,11 +27,15 @@ namespace Company.DAL.Models
 
         public DateTime HiringDate { get; set; }
 
-        public DateTime CreateAt { get; set; }
+        public DateTime CreateAt { get; set; } = DateTime.Now;
 
         [DisplayName("Department")]
         public int? DepartmentId { get; set; }
 
         public Department? Department { get; set; }
+
+        [DisplayName("Image")]
+
+        public string? ImageName { get; set; }
     }
 }
