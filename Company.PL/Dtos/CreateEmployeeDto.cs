@@ -5,6 +5,9 @@ namespace Company.PL.Dtos
 {
     public class CreateEmployeeDto
     {
+
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "Name is Required!")]
         public string EmpName { get; set; }
 
@@ -32,6 +35,10 @@ namespace Company.PL.Dtos
         public DateTime CreateAt { get; set; }
 
         public int? DepartmentId { get; set; }
+
+        public string? DepartmentName { get; set; }
+        public string? ImageName { get; set; }
+        public IFormFile? Image { get; set; }
 
     }
 }
