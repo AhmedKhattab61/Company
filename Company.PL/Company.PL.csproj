@@ -18,6 +18,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Dtos\RoleToReturnDTO.cs" />
+    <Compile Include="Dtos\UsersInRoleDTO.cs" />
+    <Compile Include="Dtos\UserToReturnDTO.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.13">
       <PrivateAssets>all</PrivateAssets>
