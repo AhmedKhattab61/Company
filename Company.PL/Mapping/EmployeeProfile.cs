@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Company.DAL.Models;
-using Company.PL.Dtos;
+using Company.PL.DTOs;
 
 namespace Company.PL.Mapping
 {
@@ -10,9 +10,9 @@ namespace Company.PL.Mapping
     {
         public EmployeeProfile()
         {
-            CreateMap<CreateEmployeeDto, Employee>()
+            CreateMap<CreateEmpolyeeDto, Employee>()
                 .ForMember(d => d.Name, o => o.MapFrom(s => s.EmpName));
-            CreateMap<Employee, CreateEmployeeDto>()
+            CreateMap<Employee, CreateEmpolyeeDto>()
                 .ForMember(d => d.EmpName, o => o.MapFrom(s => s.Name));
         }
     }

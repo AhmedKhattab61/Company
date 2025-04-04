@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Company.PL.Dtos
+namespace Company.PL.DTOs
 {
     public class SignInDTO
     {

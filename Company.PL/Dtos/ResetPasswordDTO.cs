@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Company.PL.Dtos
+namespace Company.PL.DTOs
 {
-    public class ResetPasswordDTO
+    public class ResetPasswordDto
     {
         [Required(ErrorMessage = "Password is Required!")]
         [DataType(DataType.Password)]

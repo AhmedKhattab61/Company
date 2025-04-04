@@ -8,21 +8,29 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\**" />
-    <Compile Remove="Dtos\**" />
+    <Compile Remove="DTOs\**" />
     <Content Remove="Controllers\**" />
-    <Content Remove="Dtos\**" />
+    <Content Remove="DTOs\**" />
     <EmbeddedResource Remove="Controllers\**" />
-    <EmbeddedResource Remove="Dtos\**" />
+    <EmbeddedResource Remove="DTOs\**" />
     <None Remove="Controllers\**" />
-    <None Remove="Dtos\**" />
+    <None Remove="DTOs\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="Dtos\RoleToReturnDTO.cs" />
-    <Compile Include="Dtos\UsersInRoleDTO.cs" />
-    <Compile Include="Dtos\UserToReturnDTO.cs" />
+    <Compile Include="DTOs\CreateDepartmentDto.cs" />
+    <Compile Include="DTOs\CreateEmpolyeeDto.cs" />
+    <Compile Include="DTOs\ErrorViewModel.cs" />
+    <Compile Include="DTOs\ForgotPasswordDto.cs" />
+    <Compile Include="DTOs\ResetPasswordDto.cs" />
+    <Compile Include="DTOs\RoleToReturnDTO.cs" />
+    <Compile Include="DTOs\SignInDTO.cs" />
+    <Compile Include="DTOs\SignUpDTO.cs" />
+    <Compile Include="DTOs\UpdateDepartmentDto.cs" />
+    <Compile Include="DTOs\UsersInRoleDTO.cs" />
+    <Compile Include="DTOs\UserToReturnDTO.cs" />
   </ItemGroup>
 
   <ItemGroup>

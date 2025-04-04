@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace Company.PL.Dtos
+namespace Company.PL.DTOs
 {
-    public class CreateEmployeeDto
+    public class CreateEmpolyeeDto
     {
-
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Name is Required!")]
@@ -39,6 +38,5 @@ namespace Company.PL.Dtos
         public string? DepartmentName { get; set; }
         public string? ImageName { get; set; }
         public IFormFile? Image { get; set; }
-
     }
 }

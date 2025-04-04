@@ -1,4 +1,4 @@
-namespace Company.PL.Models
+﻿namespace Company.PL.DTOs
 {
     public class ErrorViewModel
     {
